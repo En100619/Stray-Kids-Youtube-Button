@@ -1,0 +1,13 @@
+#logo-icon {
+    content: url("https://media.giphy.com/media/scaYhYgWP1UpOijKlc/giphy.gif") !important;
+    width: 100px !important;
+    height: 85px;
+    object-fit: cover;
+   }
+   
+   ytd-topbar-logo-renderer {
+    width: 0%;
+   }
+   logo-icon:active {
+    border-color: black;
+}   
