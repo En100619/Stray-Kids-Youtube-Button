@@ -1,22 +1,26 @@
 {
-    "manifest_version": 3,
-    "name": "Stray Kids Youtube Button",
-    "version": "1.0.0",
-    "description": "A simple extension that replaces the youtube button with the stray kids logo",
-    "icons": {
-        "16": "images/16.png",
-        "24": "images/24.png",
-        "32": "images/32.png",
-        "48": "images/48.png",
-        "128": "images/128.png"
-    },
-    "permissions": [
-       "activeTab"
-    ],
-    "content_scripts": [
-       {
-         "matches": ["*://*.youtube.com/*"],
-         "css": ["styles.css"]
-       }
-    ]
+  "manifest_version": 3,
+  "name": "Stray Kids Youtube Button",
+  "version": "1.0.0",
+  "description": "A simple extension that replaces the youtube button with the stray kids logo",
+  "icons": {
+      "16": "images/16.png",
+      "24": "images/24.png",
+      "32": "images/32.png",
+      "48": "images/48.png",
+      "128": "images/128.png"
+  },
+  "permissions": [
+     "activeTab"
+  ],
+  "action": {
+      "default_popup": "popup.html"
+  },
+  "content_scripts": [
+     {
+       "matches": ["*://*.youtube.com/*"],
+       "css": ["styles.css"],
+       "js": ["content.js"]
+     }
+  ]
 }
